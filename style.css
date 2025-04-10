@@ -2193,6 +2193,26 @@ body.nav-active .nav__block .nav__block-item {
 
 
 
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2f2f2f;
+  color: white;  /* Beyaz metin */
+  border: none;  /* Sınır yok */
+  border-radius: 10%;
+  padding: 10px 15px;
+  font-size: 18px;  /* Yazı boyutu */
+  cursor: pointer;  /* Fare simgesi */
+  transition: background-color 1s ease;  /* Hover efekti için geçiş */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #464646;  /* Hover durumunda koyu mavi */
+}
+
+
 @media only screen and (max-width: 768px) {
   .hero-section h1 {
     font-size: 2em;
