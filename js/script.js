@@ -160,6 +160,27 @@
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  // Butona tıklama işlevi
+  scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",  // Yumuşak kaydırma efekti
+    });
+  });
+
+  // Scroll sırasında butonun görünürlüğünü kontrol et
+  window.addEventListener("scroll", function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollToTopBtn.style.display = "block";  // Butonu göster
+    } else {
+      scrollToTopBtn.style.display = "none";  // Butonu gizle
+    }
+  });
+});
+
 
 
   // animate search box
