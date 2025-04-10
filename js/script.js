@@ -104,15 +104,60 @@
     animateTexts();
   }
 
+
+
+
   document.addEventListener("DOMContentLoaded", function () {
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
+    const sliderItems = document.querySelectorAll('.main-slider .slider-item');
+    let currentIndex = 0; // İlk resim
 
+    // İlk başta zoom-in sınıfını ilk resme ekle
+    sliderItems[currentIndex].classList.add('zoom-in');
+
+    // Resimleri otomatik olarak değiştirme (setInterval ile)
     setInterval(function () {
-        
         nextButton.click();
-    }, 3000);
+    }, 4000); // 4 saniye arayla değişim
+
+    // Resim değişim fonksiyonu
+    function changeImage(newIndex) {
+        // Önce zoom-in sınıfını mevcut resmden kaldır
+        sliderItems[currentIndex].classList.remove('zoom-in');
+
+        // Yeni index'i ayarla
+        currentIndex = newIndex;
+
+        // Yeni resme zoom-in sınıfını ekle
+        sliderItems[currentIndex].classList.add('zoom-in');
+    }
+
+    // Önceki butona tıklama işlemi
+    prevButton.addEventListener('click', function () {
+        // Önce zoom-in sınıfını mevcut resmden kaldır
+        sliderItems[currentIndex].classList.remove('zoom-in');
+
+        // Önceki index'i hesapla (döngüsel olarak)
+        currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
+
+        // Yeni resme zoom-in sınıfını ekle
+        sliderItems[currentIndex].classList.add('zoom-in');
+    });
+
+    // Sonraki butona tıklama işlemi
+    nextButton.addEventListener('click', function () {
+        // Önce zoom-in sınıfını mevcut resmden kaldır
+        sliderItems[currentIndex].classList.remove('zoom-in');
+
+        // Sonraki index'i hesapla (döngüsel olarak)
+        currentIndex = (currentIndex + 1) % sliderItems.length;
+
+        // Yeni resme zoom-in sınıfını ekle
+        sliderItems[currentIndex].classList.add('zoom-in');
+    });
 });
+
 
 
 
