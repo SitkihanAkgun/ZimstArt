@@ -2128,17 +2128,10 @@ body.nav-active .nav__block .nav__block-item {
 
   .main-slider .slider-item img {
     height: 100%;
-    max-width: fit-content;
-    transform: scale(2,2);
-  }
-  
-  
+    max-width: fit-content;    
+  } 
 
 
-/* Zoom out efekti (varsayılan durum) */
-.normal {
-    transform: scale(1); /* Resmin orijinal boyutu */
-}
 }
 
 /*----------------------------------------------*/
@@ -2179,6 +2172,26 @@ body.nav-active .nav__block .nav__block-item {
 .hero-section h1 {
   font-size: 4em;
 }
+
+
+
+.zoom-in {
+  width: 100%;
+  height: auto;
+  animation: zoomInAnimation 4s ease-in-out forwards;
+}
+
+/* @keyframes ile animasyon tanımlaması */
+@keyframes zoomInAnimation {
+  0% {
+    transform: scale(1); /* Başlangıç boyutu */
+  }
+  100% {
+    transform: scale(1.1); /* Büyütme oranı */
+  }
+}
+
+
 
 @media only screen and (max-width: 768px) {
   .hero-section h1 {
