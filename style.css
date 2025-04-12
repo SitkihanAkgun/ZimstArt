@@ -28,7 +28,7 @@
   --accent-color: #C5A992;
   --dark-color: #2f2f2f;
   --grey-color: #f1f1f1;
-  --body-text-color: #757575;
+  --body-text-color: #000000;
   --light-text-color: #afafaf;
   --dark-text-color: #2f2f2f;
 }
@@ -53,7 +53,7 @@ body {
   --bs-body-font-size: 18px;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #757575;
+  --bs-body-color: #000000;
   --bs-body-color-rgb: 117, 117, 117;
 
   --bs-primary: #C5A992;
@@ -290,7 +290,7 @@ body {
   font-family: var(--body-font);
   font-size: 16px;
   line-height: 1.8;
-  color: #757575;
+  color: #000000;
 }
 
 body.no-scroll {
@@ -2397,7 +2397,6 @@ body.nav-active .nav__block .nav__block-item {
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 10px 20px;
   border-bottom: 2px solid #0000007c;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3);
@@ -2612,7 +2611,7 @@ body.nav-active .nav__block .nav__block-item {
 }
 
 .footer-menu .social-links a {
-  color: #757575;
+  color: #000000;
 }
 
 .footer-menu .social-links a:hover {
@@ -2631,7 +2630,7 @@ body.nav-active .nav__block .nav__block-item {
   text-transform: capitalize;
   position: relative;
   transition: 0.3s ease-out;
-  color: #757575;
+  color: #000000;
 }
 
 .footer-menu .menu-item a:hover {
@@ -3454,8 +3453,16 @@ body.nav-active .nav__block .nav__block-item {
   cursor: pointer;
 }       
 
-          
-
+.shona-text{
+  margin-bottom: 0.5em;
+}
+.logo-text{
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(10px, 4vw, 45px);
+  letter-spacing: 10px;
+  white-space: nowrap;
+  font-weight: lighter;
+}
            
             
             
