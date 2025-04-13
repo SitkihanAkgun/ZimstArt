@@ -261,6 +261,17 @@ document.addEventListener("DOMContentLoaded", function () {
       menu.addEventListener('click', function () {
         return toggleClass(body, 'nav-active');
       });
+      var navLinks = document.querySelectorAll('.hover-target, .text-white');
+
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      body.classList.remove('nav-active');
+      
+      // Menü toggle'ı da kapat (checkbox'ı kaldır)
+      var toggleCheckbox = document.getElementById('menu-toggle');
+      if (toggleCheckbox) toggleCheckbox.checked = false;
+    });
+  });
     };
     var toggleClass = function toggleClass(element, stringClass) {
       if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
