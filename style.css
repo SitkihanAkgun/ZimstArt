@@ -1048,6 +1048,10 @@ fieldset[disabled] a.btn {
   font-family: "Cinzel" !important;
 }
 
+.font-w-600{
+  font-weight: 600;
+}
+
 .header{  
   font-size: 40px;
 }
@@ -1731,7 +1735,7 @@ header.sticky #navbar ul.menu-list>li>a {
   color: #fff;
   overflow: hidden;
   font-family: var(--heading-font);
-  font-size: 6vh;
+  font-size: 5vh;
   font-weight: 900;
   line-height: 1.15;
   letter-spacing: 3px;
@@ -2456,7 +2460,8 @@ body.nav-active .nav__block .nav__block-item {
   max-width: 150px;
 }
 .logo img {
-  width: 90%;
+  width: 200%;
+  max-width: none;
   height: auto;
   display: block;
 }
@@ -2584,6 +2589,7 @@ body.nav-active .nav__block .nav__block-item {
 
 .footer-menu {
   margin-right: 15px;
+  font-weight: 600;
 }
 
 .footer-menu h5 {
@@ -3456,6 +3462,7 @@ body.nav-active .nav__block .nav__block-item {
 
 .shona-text{
   margin-bottom: 0.5em;
+  font-weight: 600;
 }
 .logo-text{
   font-family: 'Pacifico', cursive;
@@ -3464,6 +3471,14 @@ body.nav-active .nav__block .nav__block-item {
   white-space: nowrap;
   font-weight: lighter;
 }
+
+.stone-margin{
+  margin-bottom: 10px;
+  font-weight: 600;
+}
            
+.stone-padding{
+  padding-left: 50px;
+}
             
             
