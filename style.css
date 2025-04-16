@@ -3513,3 +3513,25 @@ body.nav-active .nav__block .nav__block-item {
   z-index: 2;
 }      
             
+@media (max-width: 1024px) {
+  .carousel-slide {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+/* Mobil: 2 resim */
+@media (max-width: 768px) {
+  .carousel-slide {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Küçük Mobil: 1 resim */
+@media (max-width: 480px) {
+  .carousel-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
